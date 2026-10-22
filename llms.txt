@@ -30,10 +30,11 @@ Canonical URL: https://madchick.github.io/
 - Keychron K6 keyboard
 - Apple Magic Mouse
 - Logitech M331 Silent Plus Wireless Mouse
-- Apple iPhone
+- Apple iPhone Pro
 - Bose QC35
 - Apple iPad
 - Everki Studio EKP118E-ECO 15 Backpack
+- Apple Watch
 - PEOZ smart guitar
 
 ## Software Tools
