@@ -1,0 +1,54 @@
+# madchick
+
+> But what if it works?
+
+Personal website and developer profile for Oh Kwangsup (madchick).
+Canonical URL: https://madchick.github.io/
+
+## Roles
+- Project Manager
+- Product Manager
+- Software Engineer
+
+## Experience & Tech Stack
+- Web: Frontend (React), Backend (Java Spring Boot, Rust, ASP.NET)
+- Desktop: Windows (C++, C#), macOS (Swift)
+- Mobile: Flutter
+- Databases: PostgreSQL, MySQL, MariaDB, SQLite, Microsoft SQL Server, Oracle
+- Cloud & Infrastructure: AWS, Microsoft Azure, Naver Cloud Platform
+- Game Engines: Unity, Unreal Engine
+- Honors & Awards: Microsoft Visual C++ MVP (2003~2005)
+
+## Education / Schools
+- Dankook University - Industrial Engineering
+- Seoul High School
+
+## Hardware Setup
+- Apple MacBook Pro 14 M1 Pro
+- DELL LATITUDE 3540
+- LG QHD 27 monitor 27QN600
+- Keychron K6 keyboard
+- Apple Magic Mouse
+- Logitech M331 Silent Plus Wireless Mouse
+- Apple iPhone
+- Bose QC35
+- Apple iPad
+- Everki Studio EKP118E-ECO 15 Backpack
+- PEOZ smart guitar
+
+## Software Tools
+- Chrome, Sublime Text, Visual Studio Code, Antigravity, Claude Code, Codex, IntelliJ IDEA, DBeaver, Bruno, Anaconda, PuTTY, iTerm, FileZilla, Docker Desktop, Visual Studio, MarkText, Microsoft Office, OneDrive, HOP (Open HWP), PhotoScape X, Shotcut, Unity, Unreal, Blender, Ridibooks, Kindle
+
+## Verified Profiles & Social Links
+- Website: https://madchick.github.io/
+- GitHub: https://github.com/madchick
+- LinkedIn: https://www.linkedin.com/in/ohkwangsup/
+- X (Twitter): https://x.com/OhKwangsup
+- YouTube: https://www.youtube.com/@%EB%AF%B8%EC%B9%9C%EB%B3%91%EC%95%84%EB%A6%ACTV
+- Tistory Blog: https://madchick.tistory.com/219
+- Naver Blog: https://blog.naver.com/madchick18
+- Instagram: https://www.instagram.com/oh.kwangsup/
+- Stack Overflow: https://stackoverflow.com/users/6146229/madchick
+- Facebook: https://www.facebook.com/profile.php?id=100075721473020
+- Pinterest: https://kr.pinterest.com/kwangsupoh/
+- Nomadcoders: https://nomadcoders.co/community

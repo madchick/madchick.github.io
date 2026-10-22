@@ -1,44 +1,579 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>madchick's site</title>
+  <title>madchick - But what if it works?</title>
+  <meta name="description" content="Personal website of madchick (Oh Kwangsup). Project Manager, Product Manager, Software Engineer. Web, Desktop, Mobile, Cloud, and Game Engine development.">
+  <meta name="keywords" content="madchick, Oh Kwangsup, 오광섭, Software Engineer, Project Manager, Product Manager, Flutter, React, Spring Boot, Rust, C++, C#, MVP">
+  <meta name="author" content="Oh Kwangsup (madchick)">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://madchick.github.io/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://madchick.github.io/">
+  <meta property="og:title" content="madchick - But what if it works?">
+  <meta property="og:description" content="Project Manager · Product Manager · Software Engineer. Experience in Web, Desktop, Mobile, Cloud, and Game Engines. Former Microsoft Visual C++ MVP.">
+  <meta property="og:site_name" content="madchick">
+  <meta property="profile:username" content="madchick">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://madchick.github.io/">
+  <meta name="twitter:title" content="madchick - But what if it works?">
+  <meta name="twitter:description" content="Project Manager · Product Manager · Software Engineer. Experience in Web, Desktop, Mobile, Cloud, and Game Engines. Former Microsoft Visual C++ MVP.">
+  <meta name="twitter:creator" content="@OhKwangsup">
+  <meta name="twitter:site" content="@OhKwangsup">
+
+  <!-- Structured Data / JSON-LD for Search Engines & AI LLMs (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://madchick.github.io/#website",
+        "url": "https://madchick.github.io/",
+        "name": "madchick",
+        "description": "Personal website of madchick (Oh Kwangsup). Project Manager, Product Manager, Software Engineer.",
+        "publisher": {
+          "@id": "https://madchick.github.io/#person"
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://madchick.github.io/#webpage",
+        "url": "https://madchick.github.io/",
+        "name": "madchick - But what if it works?",
+        "isPartOf": {
+          "@id": "https://madchick.github.io/#website"
+        },
+        "mainEntity": {
+          "@id": "https://madchick.github.io/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://madchick.github.io/#person",
+        "name": "Oh Kwangsup",
+        "alternateName": ["madchick", "오광섭"],
+        "jobTitle": [
+          "Project Manager",
+          "Product Manager",
+          "Software Engineer"
+        ],
+        "description": "Project Manager, Product Manager, and Software Engineer. Former Microsoft Visual C++ MVP (2003~2005).",
+        "url": "https://madchick.github.io/",
+        "award": "Microsoft Visual C++ MVP (2003~2005)",
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Dankook University",
+            "department": "Industrial Engineering"
+          },
+          {
+            "@type": "HighSchool",
+            "name": "Seoul High School"
+          }
+        ],
+        "knowsAbout": [
+          "React",
+          "Java Spring Boot",
+          "Rust",
+          "ASP.NET",
+          "C++",
+          "C#",
+          "Swift",
+          "Flutter",
+          "PostgreSQL",
+          "MySQL",
+          "MariaDB",
+          "SQLite",
+          "Microsoft SQL Server",
+          "Oracle Database",
+          "AWS",
+          "Microsoft Azure",
+          "Naver Cloud Platform",
+          "Unity",
+          "Unreal Engine",
+          "Project Management",
+          "Product Management",
+          "Software Engineering"
+        ],
+        "sameAs": [
+          "https://madchick.tistory.com/219",
+          "https://blog.naver.com/madchick18",
+          "https://x.com/OhKwangsup",
+          "https://www.instagram.com/oh.kwangsup/",
+          "https://www.youtube.com/@%EB%AF%B8%EC%B9%9C%EB%B3%91%EC%95%84%EB%A6%ACTV",
+          "https://www.linkedin.com/in/ohkwangsup/",
+          "https://www.facebook.com/profile.php?id=100075721473020",
+          "https://kr.pinterest.com/kwangsupoh/",
+          "https://stackoverflow.com/users/6146229/madchick",
+          "https://nomadcoders.co/community",
+          "https://github.com/madchick",
+          "https://colab.research.google.com/notebooks/intro.ipynb",
+          "https://www.kaggle.com/",
+          "https://www.ted.com/",
+          "https://www.udemy.com/",
+          "https://nomadcoders.co/courses",
+          "https://fastcampus.co.kr/",
+          "https://spartaclub.kr/",
+          "https://kr.diablo3.blizzard.com/ko-kr/profile/%EB%AF%B8%EC%B9%9C%EB%B3%91%EC%95%84%EB%A6%AC-3793/hero/91767944",
+          "https://www.youtube.com/@%EB%AF%B8%EC%B9%9C%EB%B3%91%EC%95%84%EB%A6%ACTV/playlists"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+    :root {
+      --bg: #ffffff;
+      --text: #111010;
+      --text-muted: #66666e;
+      --text-subtle: #9999a3;
+      --border: #e7e7ea;
+      --tag-bg: #f4f4f6;
+      --tag-border: #e5e5e8;
+      --accent: #09090b;
+      --bullet: #a1a1aa;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111010;
+        --text: #ededed;
+        --text-muted: #9a9aa2;
+        --text-subtle: #63636e;
+        --border: #262628;
+        --tag-bg: #1c1c1f;
+        --tag-border: #2c2c30;
+        --accent: #fafafa;
+        --bullet: #52525b;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background-color: #f8fafc;
-      color: #1e293b;
+      padding: 0;
     }
-    .card {
-      background: white;
-      padding: 2.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-      text-align: center;
-      max-width: 480px;
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      letter-spacing: -0.015em;
+      -webkit-font-smoothing: antialiased;
     }
-    h1 {
-      margin-top: 0;
-      font-size: 1.75rem;
-      color: #0f172a;
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 4.5rem 1.25rem 6rem;
     }
-    p {
-      color: #64748b;
+
+    /* Header */
+    header {
+      margin-bottom: 2.75rem;
+    }
+
+    h1.title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 1.25rem;
+    }
+
+    .roles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 0.75rem;
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .roles span {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .roles span:not(:last-child)::after {
+      content: "•";
+      margin-left: 0.75rem;
+      color: var(--text-subtle);
+    }
+
+    /* Section Styles */
+    section {
+      margin-top: 3.25rem;
+    }
+
+    h2.section-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    /* Definition List / Tech Stack */
+    .info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      font-size: 0.95rem;
+    }
+
+    .info-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    @media (min-width: 540px) {
+      .info-item {
+        flex-direction: row;
+        gap: 0.5rem;
+      }
+      .info-label {
+        min-width: 82px;
+        flex-shrink: 0;
+      }
+    }
+
+    .info-label {
+      font-weight: 600;
+      color: var(--text);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88rem;
+    }
+
+    .info-value {
+      color: var(--text-muted);
+    }
+
+
+    /* 2-Column Bullet Lists */
+    ul.bullet-list {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+      font-size: 0.95rem;
+      color: var(--text);
+      columns: 1;
+    }
+
+    @media (min-width: 520px) {
+      ul.bullet-list {
+        columns: 2;
+        column-gap: 2.25rem;
+      }
+    }
+
+    ul.bullet-list li {
+      break-inside: avoid;
+      margin-bottom: 0.45rem;
+    }
+
+    ul.bullet-list li::marker {
+      color: var(--bullet);
+    }
+
+    /* Links in Bullet List */
+    ul.links-list a {
+      color: var(--text);
+      text-decoration: underline;
+      text-decoration-color: var(--border);
+      text-underline-offset: 3px;
+      font-weight: normal;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    ul.links-list a:hover {
+      text-decoration-color: var(--text);
+      color: var(--accent);
+    }
+
+    ul.links-list a .arrow {
+      color: var(--text-subtle);
+      font-size: 0.85em;
+      transition: transform 0.15s ease, color 0.15s ease;
+    }
+
+    ul.links-list a:hover .arrow {
+      color: var(--text);
+      transform: translate(1px, -1px);
+    }
+
+    .disclaimer {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
       line-height: 1.6;
-      margin-bottom: 0;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 4.5rem;
+      padding-top: 1.75rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      color: var(--text-subtle);
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>안녕하세요! madchick의 페이지입니다.</h1>
-    <p>GitHub Pages가 정상적으로 연동되었습니다.</p>
-  </div>
+  <main class="container">
+    <!-- Header -->
+    <header>
+      <h1 class="title">madchick</h1>
+      <p class="subtitle">But what if it works?</p>
+      <div class="roles">
+        <span>Project Manager</span>
+        <span>Product Manager</span>
+        <span>Software Engineer</span>
+      </div>
+    </header>
+
+    <!-- Experience & Tech -->
+    <section>
+      <h2 class="section-title">Experience & Tech</h2>
+      <div class="info-list">
+        <div class="info-item">
+          <span class="info-label">Web</span>
+          <span class="info-value">Frontend (React), Backend (Java Spring Boot, Rust, ASP.NET)</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Desktop</span>
+          <span class="info-value">Windows (C++, C#), macOS (Swift)</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Mobile</span>
+          <span class="info-value">Flutter</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">DB</span>
+          <span class="info-value">PostgreSQL, mySQL, MariaDB, SQLite, MS SQL Server, Oracle</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Infra</span>
+          <span class="info-value">AWS, Azure, Naver Cloud Platform</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Honor</span>
+          <span class="info-value">Microsoft Visual C++ MVP (2003~2005)</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Engine</span>
+          <span class="info-value">Unity, Unreal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schools -->
+    <section>
+      <h2 class="section-title">Schools</h2>
+      <div class="info-list">
+        <div class="info-item">
+          <span class="info-label">Univ</span>
+          <span class="info-value">Dankook University Industrial Engineering</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">High</span>
+          <span class="info-value">Seoul High School</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hardware -->
+    <section>
+      <h2 class="section-title">Hardware</h2>
+      <ul class="bullet-list">
+        <li>Apple MacBook Pro 14 M1 Pro</li>
+        <li>DELL LATITUDE 3540</li>
+        <li>LG QHD 27 monitor 27QN600</li>
+        <li>Keychron K6 keyboard</li>
+        <li>Apple Magic Mouse</li>
+        <li>Logitech M331 Silent Plus Wireless Mouse</li>
+        <li>Apple iPhone</li>
+        <li>Bose QC35</li>
+        <li>Apple iPad</li>
+        <li>Everki Studio EKP118E-ECO 15 Backpack</li>
+        <li>PEOZ smart guitar</li>
+      </ul>
+      <p class="disclaimer">쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받을 수 있습니다.</p>
+    </section>
+
+    <!-- Software -->
+    <section>
+      <h2 class="section-title">Software</h2>
+      <ul class="bullet-list">
+        <li>Chrome</li>
+        <li>Sublime Text</li>
+        <li>Visual Studio code</li>
+        <li>Antigravity</li>
+        <li>Claude Code</li>
+        <li>Codex</li>
+        <li>IntelliJ IDEA</li>
+        <li>DBeaver</li>
+        <li>Bruno</li>
+        <li>Anaconda</li>
+        <li>putty</li>
+        <li>iTerm</li>
+        <li>FileZilla</li>
+        <li>Docker Desktop</li>
+        <li>Visual Studio</li>
+        <li>MarkText</li>
+        <li>Microsoft Office</li>
+        <li>OneDrive</li>
+        <li>HOP (Open HWP)</li>
+        <li>PhotoScape X</li>
+        <li>Shotcut</li>
+        <li>Unity</li>
+        <li>Unreal</li>
+        <li>Blender</li>
+        <li>Ridibooks</li>
+        <li>Kindle</li>
+      </ul>
+    </section>
+
+    <!-- Favorite Places -->
+    <section>
+      <h2 class="section-title">Favorite Places</h2>
+      <ul class="bullet-list links-list">
+        <li>
+          <a href="https://madchick.github.io/" target="_blank" rel="noopener noreferrer">
+            My Home <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://madchick.tistory.com/219" target="_blank" rel="noopener noreferrer">
+            Tistory Blog <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://blog.naver.com/madchick18" target="_blank" rel="noopener noreferrer">
+            Naver Blog <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/OhKwangsup" target="_blank" rel="noopener noreferrer">
+            X <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/oh.kwangsup/" target="_blank" rel="noopener noreferrer">
+            Instagram <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@%EB%AF%B8%EC%B9%9C%EB%B3%91%EC%95%84%EB%A6%ACTV" target="_blank" rel="noopener noreferrer">
+            YouTube <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/ohkwangsup/" target="_blank" rel="noopener noreferrer">
+            LinkedIn <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100075721473020" target="_blank" rel="noopener noreferrer">
+            Facebook <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://kr.pinterest.com/kwangsupoh/" target="_blank" rel="noopener noreferrer">
+            Pinterest <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://stackoverflow.com/users/6146229/madchick" target="_blank" rel="noopener noreferrer">
+            Stack Overflow <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://nomadcoders.co/community" target="_blank" rel="noopener noreferrer">
+            Nomadcoders community <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/madchick" target="_blank" rel="noopener noreferrer">
+            GitHub <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://colab.research.google.com/notebooks/intro.ipynb" target="_blank" rel="noopener noreferrer">
+            colab <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.kaggle.com/" target="_blank" rel="noopener noreferrer">
+            Kaggle <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.ted.com/" target="_blank" rel="noopener noreferrer">
+            TED <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">
+            udemy <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://nomadcoders.co/courses" target="_blank" rel="noopener noreferrer">
+            nomad coders <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://fastcampus.co.kr/" target="_blank" rel="noopener noreferrer">
+            Fast campers <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://spartaclub.kr/" target="_blank" rel="noopener noreferrer">
+            SPARTA Club <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://kr.diablo3.blizzard.com/ko-kr/profile/%EB%AF%B8%EC%B9%9C%EB%B3%91%EC%95%84%EB%A6%AC-3793/hero/91767944" target="_blank" rel="noopener noreferrer">
+            Diablo III <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@%EB%AF%B8%EC%B9%9C%EB%B3%91%EC%95%84%EB%A6%ACTV/playlists" target="_blank" rel="noopener noreferrer">
+            YouTube Playlist <span class="arrow">↗</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <span>© madchick</span>
+      <span>madchick.github.io</span>
+    </footer>
+  </main>
 </body>
 </html>
