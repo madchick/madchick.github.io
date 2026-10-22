@@ -10,6 +10,9 @@ Canonical URL: https://madchick.github.io/
 - Product Manager
 - Software Engineer
 
+I've been in software engineering since 1996, starting out with Delphi building enterprise tools and e-learning solutions, mainly across diverse System Integration projects.
+These days I work in management, but I still code regularly on my own side projects.
+
 ## Experience & Tech Stack
 - Web: Frontend (React), Backend (Java Spring Boot, Rust, ASP.NET)
 - Desktop: Windows (C++, C#), macOS (Swift)
@@ -29,7 +32,7 @@ Canonical URL: https://madchick.github.io/
 - LG QHD 27 monitor 27QN600
 - Keychron K6 keyboard
 - Apple Magic Mouse
-- Logitech M331 Silent Plus Wireless Mouse
+- Logitech M331 Wireless Mouse
 - Apple iPhone Pro
 - Bose QC35
 - Apple iPad

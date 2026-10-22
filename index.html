@@ -218,6 +218,13 @@
       color: var(--text-subtle);
     }
 
+    .intro {
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--text);
+    }
+
     /* Section Styles */
     section {
       margin-top: 3.25rem;
@@ -329,6 +336,52 @@
       line-height: 1.6;
     }
 
+    .place-photo {
+      margin-top: 2rem;
+    }
+
+    .place-photo img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      border: 1px solid var(--border);
+    }
+
+    .place-photo figcaption {
+      margin-top: 0.65rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .place-photo figcaption a {
+      color: var(--text);
+      text-decoration: underline;
+      text-decoration-color: var(--border);
+      text-underline-offset: 3px;
+      transition: all 0.15s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    .place-photo figcaption a:hover {
+      text-decoration-color: var(--text);
+      color: var(--accent);
+    }
+
+    .place-photo figcaption a .arrow {
+      color: var(--text-subtle);
+      font-size: 0.85em;
+      transition: transform 0.15s ease, color 0.15s ease;
+    }
+
+    .place-photo figcaption a:hover .arrow {
+      color: var(--text);
+      transform: translate(1px, -1px);
+    }
+
     /* Footer */
     footer {
       margin-top: 4.5rem;
@@ -353,6 +406,10 @@
         <span>Product Manager</span>
         <span>Software Engineer</span>
       </div>
+      <p class="intro">
+        I've been in software engineering since 1996, starting out with Delphi building enterprise tools and e-learning solutions, mainly across diverse System Integration projects.<br>
+        These days I work in management, but I still code regularly on my own side projects.
+      </p>
     </header>
 
     <!-- Experience & Tech -->
@@ -380,12 +437,12 @@
           <span class="info-value">AWS, Azure, Naver Cloud Platform</span>
         </div>
         <div class="info-item">
-          <span class="info-label">Honor</span>
-          <span class="info-value">Microsoft Visual C++ MVP (2003~2005)</span>
-        </div>
-        <div class="info-item">
           <span class="info-label">Engine</span>
           <span class="info-value">Unity, Unreal</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Honor</span>
+          <span class="info-value">Microsoft Visual C++ MVP (2003~2005)</span>
         </div>
       </div>
     </section>
@@ -436,7 +493,7 @@
         </li>
         <li>
           <a href="https://link.coupang.com/a/h3FTFIKj92" target="_blank" rel="noopener noreferrer sponsored">
-            Logitech M331 Silent Plus Wireless Mouse <span class="arrow">↗</span>
+            Logitech M331 Wireless Mouse <span class="arrow">↗</span>
           </a>
         </li>
         <li>
@@ -470,7 +527,7 @@
           </a>
         </li>
       </ul>
-      <p class="disclaimer">쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받을 수 있습니다.</p>
+      <p class="disclaimer">As part of the Coupang Partners program, I may earn a commission from qualifying purchases.</p>
     </section>
 
     <!-- Software -->
@@ -611,11 +668,20 @@
           </a>
         </li>
         <li>
+          <a href="https://supercell.com/en/games/clashofclans/" target="_blank" rel="noopener noreferrer">
+            Clash of Clans <span class="arrow">↗</span>
+          </a>
+        </li>
+        <li>
           <a href="https://www.youtube.com/@%EB%AF%B8%EC%B9%9C%EB%B3%91%EC%95%84%EB%A6%ACTV/playlists" target="_blank" rel="noopener noreferrer">
             YouTube Playlist <span class="arrow">↗</span>
           </a>
         </li>
       </ul>
+      <figure class="place-photo">
+        <img src="place.jpg" alt="Restaurant VOISINS, 22F, Hotel Naru Seoul – MGallery" width="1240" height="540" loading="lazy">
+        <figcaption>Restaurant VOISINS, 22F, Hotel Naru Seoul – <a href="https://www.hotelnaruseoul.com/en/restaurants-bars/restaurant-voisin/" target="_blank" rel="noopener noreferrer">MGallery <span class="arrow">↗</span></a></figcaption>
+      </figure>
     </section>
 
     <!-- Footer -->
